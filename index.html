@@ -141,7 +141,7 @@
             submittedName = name; // Store the submitted name
             submittedDOB = dob; // Store the submitted date of birth
             addButton.style.display = 'inline-block'; // Show the Add button
-            form.elements['Mobile'].disabled = true; // Disable the Mobile field after submission
+            form.elements['Mobile'].readOnly = true; // Disable the Mobile field after submission
         })
         .catch(error => {
             console.error('Error!!', error.message);
