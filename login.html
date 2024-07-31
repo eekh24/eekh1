@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Global styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styles for form container */
+        .container {
+            width: 100%;
+            max-width: 400px; /* Set maximum width of the form container */
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Styles for form inputs */
+        input[type=date], input[type=number], input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Styles for submit button */
+        input[type=submit], button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover, button:hover {
+            background-color: #45a049;
+        }
+
+        /* Styles for message div */
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+
+        /* Styles for modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            color: green;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #topBar {
+            height: 60px;
+            width: 100%; 
+        }
+
+        #topBar h4 {
+            color: green;
+            margin-left: 32%;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+
+        big{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="topBar">
+        <h4>eekh</h4>
+    </div>
+
+    <h3><pre>    
+      Thank you for contacting eekh!
+       Please Fill the Below Feilds
+      You will get <big><big><u>*Rs.100 off*</u></big></big> 
+    </pre></h3>
+
+    <div class="container">
+        <h1 id="welcome-message">Loading...</h1>
+
+        <form id="info-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="date" id="dob" required placeholder="Please Enter Date Of Birth">
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="record">
+            <h3>List Of Name and Date Of Birth</h3>
+            <div id="records-list">Loading...</div>
+        </div>
+       
+
+
+        <div id="message"></div>
+        <hr>
+        <p><u><b>Our Servings</b></u></p>
+        <hr>
+        <pre><b>1.  <a href="cake.html">Cake</a></b></pre>
+        <pre><b>2.  <a href="pizza.html">Pizza</a></b></pre>
+        <pre><b>3.  <a href="index.html">Ice Cream</a></b></pre>
+        <pre><b>4.  <a href="index.html">Cold Coffee</a></b></pre>
+    </div>
+
+    <hr>
+     <h3><pre>  Cake</pre></h3>
+  <hr>
+    <img src="cake1.jpeg" alt="image" style="width:49%; margin-top:5px;"> <img src="cake2.jpeg" alt="image" style="width:49%; margin-top:5px;">
+    <img src="cake3.jpeg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake4.jpeg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake10.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake9.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake6.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake7.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake12.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake14.jpg" alt="image" style="width:49%; margin-top:2px;">
+      <hr>
+  <h3><pre>  Layer Cake</pre></h3>
+      <hr>
+    <img src="cake32.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake36.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake33.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake5.jpeg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake30.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake35.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake34.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake37.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake38.jpg" alt="image" style="width:49%; margin-top:2px;"> 
+    <hr>
+    <h3><pre>  Anniversary Cake</pre></h3>
+    <hr>
+  <img src="cake16.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake11.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake15.jpg" alt="image" style="width:49%; margin-top:2px;"> 
+    <hr>
+    <h3><pre>  Girls Cake</pre></h3>
+    <hr>
+  <img src="cake31.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake42.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake18.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake19.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <hr>
+    <h3><pre>  Boys Cake</pre></h3>
+    <hr>
+  <img src="cake39.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake29.jpg" alt="image" style="width:49%; margin-top:2px;">
+  <img src="cake8.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake24.jpg" alt="image" style="width:49%; margin-top:2px;">
+  <img src="cake41.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake40.jpg" alt="image" style="width:49%; margin-top:2px;"> 
+   <img src="cake28.jpg" alt="image" style="width:49%; margin-top:2px;"> 
+    <hr>
+    <h3><pre>  Photo Cake</pre></h3>
+    <hr>
+  <img src="cake20.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake22.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <img src="cake21.jpg" alt="image" style="width:49%; margin-top:2px;"> <img src="cake23.jpg" alt="image" style="width:49%; margin-top:2px;">
+    <!-- Add more images as needed -->
+
+    <!-- Reset Password Modal -->
+    <div id="resetPasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeresetmodal">&times;</span>
+            <h2>Reset Password</h2>
+            <input type="text" id="reset-mobile" placeholder="Enter your registered mobile number" required>
+            <button id="sendOtpButton">Send OTP</button>
+
+            <div id="otpSection" style="display:none;">
+                <input type="text" id="otp" placeholder="Enter OTP" required>
+                <button id="verifyotp">Verify OTP</button>
+            </div>
+
+            <div id="newPasswordSection" style="display:none;">
+                <input type="password" id="new-password" placeholder="Enter new password" required>
+                <button id="resetpassword">Reset Password</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to open the Reset Password Modal -->
+    
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js';
+        import { getFirestore, doc, getDoc, addDoc, collection, getDocs, updateDoc } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js';
+        import { getAuth, signInWithPhoneNumber, RecaptchaVerifier } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js';
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDjpg5dNL6R44dPpoDQabNaT8tLVmVWTQQ",
+            authDomain: "eekh-website.firebaseapp.com",
+            databaseURL: "https://eekh-website-default-rtdb.firebaseio.com",
+            projectId: "eekh-website",
+            storageBucket: "eekh-website.appspot.com",
+            messagingSenderId: "276234231567",
+            appId: "1:276234231567:web:1509267f60d97a83cea87a",
+            measurementId: "G-QX5HCKXMDK"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+
+        
+        // Get query parameters
+        const queryParams = new URLSearchParams(window.location.search);
+        const mobile = queryParams.get('mobile');
+
+        if (mobile) {
+            const userRef = doc(db, 'users', mobile);
+            const docSnap = await getDoc(userRef);
+
+            const welcomeMessage = document.getElementById('welcome-message');
+            const nameInput = document.getElementById('name');
+            const dobInput = document.getElementById('dob');
+            const recordsList = document.getElementById('records-list');
+
+            if (docSnap.exists()) {
+                const userData = docSnap.data();
+                const userName = userData.name;
+
+                welcomeMessage.textContent = `Welcome, ${userName}!`;
+            } else {
+                welcomeMessage.textContent = 'User not found!';
+            }
+
+            // Handle form submission
+            const infoForm = document.getElementById('info-form');
+            infoForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const name = nameInput.value;
+                const dob = dobInput.value;
+
+                try {
+                    // Add new record to Firestore under a subcollection for the user
+                    const docRef = await addDoc(collection(db, 'users', mobile, 'records'), {
+                        name: name,
+                        dob: dob
+                    });
+
+                    console.log('Document written with ID: ', docRef.id);
+
+                    // Refresh the records list
+                    fetchRecords();
+                } catch (e) {
+                    console.error('Error adding document: ', e);
+                }
+            });
+
+            // Function to fetch and display all records
+            async function fetchRecords() {
+                recordsList.innerHTML = 'Loading...'; // Show loading text
+
+                try {
+                    const snapshot = await getDocs(collection(db, 'users', mobile, 'records'));
+                    recordsList.innerHTML = ''; // Clear loading text
+
+                    if (snapshot.empty) {
+                        recordsList.textContent = 'No records found.';
+                    } else {
+                        snapshot.forEach(doc => {
+                            const data = doc.data();
+                            const recordElement = document.createElement('div');
+                            recordElement.textContent = `${data.name}            :             ${data.dob}`;
+                            recordsList.appendChild(recordElement);
+                        });
+                    }
+                } catch (e) {
+                    console.error('Error fetching records: ', e);
+                    recordsList.textContent = 'Failed to load records.';
+                }
+            }
+
+            // Fetch and display records on page load
+            fetchRecords();
+        } else {
+            alert('User not found.');
+        }
+
+        
+    </script>
+</body>
+</html>
